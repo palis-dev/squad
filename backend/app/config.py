@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     openai_api_key: str = ""
     openai_model: str = "gpt-4-turbo-preview"
     
-    database_url: str = "postgresql+asyncpg://localhost/squad"
+    database_url: str = "sqlite+aiosqlite:///./squad.db"
     
     devin_api_key: str = ""
     devin_api_url: str = "https://api.devin.ai"
